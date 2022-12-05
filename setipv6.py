@@ -27,7 +27,7 @@ def get_yitainame_and_ipv4():
     date = d[d.find("以太网适配器"):]
     while True:
         a = date.find("媒体状态") - date.find("以太网适配器")
-        if a < 20:
+        if 0< a < 20:
             date = date[date.find("连接特定") + 28:]
         else:
             break
